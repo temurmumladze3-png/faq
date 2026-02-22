@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #b068e9, #6463e7 147%);
+  height: 100vh;
+  padding-inline: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  padding: 2.4rem;
+  border-radius: 23px;
+  padding-top: 13.2rem;
+  position: relative;
+  box-shadow: 0 5rem 5rem -2rem rgba(53, 18, 122, 0.5);
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1e1f36;
+  background-color: white;
+  margin-bottom: 4rem;
+}
+
+.question button {
+  font-size: 1.3rem;
+  text-align: left;
+  background-color: white;
+  border: unset;
+  width: 100%;
+  height: 3.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.question button:hover {
+  color: red;
+}
+
+.arrow-btn {
+  transition: transform 0.3s;
+}
+
+.question button:hover {
+  color: red;
+}
+
+.question-content {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #787887;
+  background-color: white;
+  display: none;
+  text-align: left;
+}
+
+.question {
+  border-bottom: 1px solid #e8e8ea;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.6rem;
+}
+
+.question.opened button {
+  font-weight: bold;
+}
+.question.opened img {
+  transform: rotate(180deg);
+}
+.question.opened .question-content {
+  display: block;
+}
+
+.img-container {
+  position: absolute;
+  width: 24rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -11rem;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.patern {
+  transform: translateY(-7rem);
+}
+
+@media (min-width: 1000px) {
+  .container {
+    display: flex;
+    padding: 0;
+    max-width: 92rem;
+    overflow: hidden;
+  }
+  h1 {
+    text-align: left;
+  }
+  .img-container,
+  .content {
+    width: 50%;
+  }
+  .img-container {
+    position: static;
+    transform: unset;
+    top: unset;
+    left: unset;
+    display: flex;
+    align-items: center;
+  }
+  .content {
+    padding-right: 9.5rem;
+    padding-top: 6.5rem;
+  }
+  .patern {
+    position: absolute;
+    top: -30rem;
+    right: 0;
+    transform: translateX(-50%);
+  }
+}/*# sourceMappingURL=style.css.map */
